@@ -10,7 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','StaticPagesController@home');
+Route::get('/help','StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
+
+
+/*Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('help');
 });
+
+Route::get('/', function () {
+    return view('about');
+});*/
